@@ -53,8 +53,8 @@ while ch == 'y':
         sum_user = calculate_score(card_user)
         sum_comp = calculate_score(card_comp)
         
-        print(f'user picked cards are {card_user} and score is {sum_user}')
-        print(f'computer picked 1st card is {card_comp[0]} ')
+        print(f'Your picked cards are {card_user} and score is {sum_user}')
+        print(f'Opponent picked 1st card is {card_comp[0]} ')
         if sum_user == 0 or sum_comp == 0 or sum_user > 21:
             game_over = True
         else:
