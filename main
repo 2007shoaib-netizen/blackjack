@@ -29,13 +29,13 @@ def chk_compare(u_score,c_score):
     elif c_score == 0:
         return "You loose. Opponet wins by Blackjack!!!"
     elif u_score > 21:
-        return "You loose."
+        return "You went over. You loose."
     elif c_score > 21:
-        return "You win."
+        return "Opponent went over. You win."
     elif u_score > c_score:
-        return "You win"
+        return "Your score is more. You win"
     else:
-        return "You loose"
+        return "Opponent score is more. You loose"
 ch = input('Do you accept a blackjack challenge(y/n): ').lower() 
 while ch == 'y':
     print(logo)
